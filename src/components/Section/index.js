@@ -2,24 +2,37 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   max-width: 1216px;
-  max-height: 404px;
   padding: 32px;
   background-color: ${({ theme }) => theme.color.white};
   border-radius: 4px;
+  margin-left: 14px;
+  margin-right: 14px;
 `;
 
 export const Headline = styled.h2`
   font-size: 30px;
   font-weight: 900;
   margin-top: 0px;
-  margin-left: 24px;
+  margin-left: 16px;
   color: ${({ theme }) => theme.color.mineShaft};
 `;
 
 export const List = styled.ul`
+  margin-left: 32px;
+  margin-right: 32px;
   padding-inline-start: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 16px;
+  }
 `;
 
 export const Item = styled.li`
