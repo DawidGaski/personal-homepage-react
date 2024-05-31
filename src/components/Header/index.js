@@ -2,25 +2,47 @@ import styled from "styled-components";
 
 export const Hero = styled.article`
   max-width: 1089px;
-  max-height: 384px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 66px;
+  margin-left: 16px;
+  margin-right: 32px;
+  border: 1px, ${({ theme }) => theme.color.liteIron};
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Image = styled.img`
   width: 380px;
   height: 380px;
   border-radius: 50%;
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    width: 254px;
+    height: 254px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 128px;
+    height: 128px;
+  }
 `;
 
 export const Content = styled.div`
-  width: 633px;
-  height: 247px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    width: auto;
+    height: auto;
+    margin-right: 32px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: auto;
+    height: auto;
+    margin-right: 32px;
+  }
 `;
 
 export const Caption = styled.header`
