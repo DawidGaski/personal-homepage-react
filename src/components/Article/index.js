@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Article = styled.article``;
+export const Article = styled.article`
+  width: auto;
+  height: auto;
+  margin: 16px;
+`;
 
 export const ArticleHeader = styled.header`
   display: flex;
@@ -29,12 +33,16 @@ export const ArticleList = styled.ul`
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
   margin: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ArticleParagraph = styled.p`
-  width: 592px;
-  height: 322px;
   margin: 0;
   background: ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.mineShaft};
+  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.liteViolet},
+    0px -2px 50px 0px ${({ theme }) => theme.color.veryLiteViolet};
 `;
