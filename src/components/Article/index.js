@@ -18,6 +18,12 @@ export const ArticleHeadline = styled.h2`
   margin-top: 12px;
   margin-bottom: 8px;
   color: ${({ theme }) => theme.color.mineShaft};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 24px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+  }
 `;
 
 export const ArticleHeadlineParagraph = styled.p`
@@ -25,6 +31,12 @@ export const ArticleHeadlineParagraph = styled.p`
   font-weight: 400;
   margin-top: 0px;
   color: ${({ theme }) => theme.color.mineShaft};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 18px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 16px;
+  }
 `;
 
 export const ArticleList = styled.ul`

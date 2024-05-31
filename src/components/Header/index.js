@@ -58,6 +58,13 @@ export const Title = styled.h1`
   letter-spacing: 5%;
   line-height: 45.99px;
   color: ${({ theme }) => theme.color.mineShaft};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 22px;
+  }
 `;
 
 export const LeadParagraph = styled.p`
@@ -66,9 +73,17 @@ export const LeadParagraph = styled.p`
   letter-spacing: 5%;
   line-height: 28px;
   color: ${({ theme }) => theme.color.slateGrey};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 16px;
+  }
 `;
 
 export const Button = styled.button`
+  font-size: 20px;
   width: 154px;
   height: 49px;
   border: 1px;
@@ -76,4 +91,13 @@ export const Button = styled.button`
   padding: 12px 16px;
   color: ${({ theme }) => theme.color.white};
   background: ${({ theme }) => theme.color.scienceBlue};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 16px;
+    width: 138px;
+    height: 46px;
+  }
 `;

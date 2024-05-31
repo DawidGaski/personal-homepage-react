@@ -15,6 +15,12 @@ export const Headline = styled.h2`
   margin-top: 0px;
   margin-left: 16px;
   color: ${({ theme }) => theme.color.mineShaft};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 24px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+  }
 `;
 
 export const List = styled.ul`
@@ -41,4 +47,10 @@ export const Item = styled.li`
   letter-spacing: 5%;
   padding: 4px;
   color: ${({ theme }) => theme.color.slateGrey};
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: 16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+  }
 `;
