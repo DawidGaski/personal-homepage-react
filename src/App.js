@@ -19,6 +19,7 @@ import {
 } from "./components/Header";
 import { Headline, Item, List, Section } from "./components/Section";
 import Poster from "./images/Poster.jpg";
+
 function App() {
   return (
     <Container>
@@ -86,10 +87,26 @@ function App() {
           </ArticleHeadlineParagraph>
         </ArticleHeader>
         <ArticleList>
-          <ArticleParagraph>1</ArticleParagraph>
-          <ArticleParagraph>2</ArticleParagraph>
-          <ArticleParagraph>3</ArticleParagraph>
-          <ArticleParagraph>4</ArticleParagraph>
+          <ArticleParagraph>
+            I’m always open to new projects whenever I have the time. If you
+            have a website, dashboard or mobile app in mind and need some help
+            to make your ideas come to life, feel free to contact me
+          </ArticleParagraph>
+          <ArticleParagraph>
+            I’m always open to new projects whenever I have the time. If you
+            have a website, dashboard or mobile app in mind and need some help
+            to make your ideas come to life, feel free to contact me
+          </ArticleParagraph>
+          <ArticleParagraph>
+            I’m always open to new projects whenever I have the time. If you
+            have a website, dashboard or mobile app in mind and need some help
+            to make your ideas come to life, feel free to contact me
+          </ArticleParagraph>
+          <ArticleParagraph>
+            I’m always open to new projects whenever I have the time. If you
+            have a website, dashboard or mobile app in mind and need some help
+            to make your ideas come to life, feel free to contact me
+          </ArticleParagraph>
         </ArticleList>
       </Article>
       <End>
