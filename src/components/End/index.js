@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const End = styled.section`
   width: 691px;
   height: 281px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 `;
 
 export const EndCaption = styled.header`
