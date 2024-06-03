@@ -12,6 +12,7 @@ import {
 import { Headline, Item, List, Section } from "./components/Section";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import Poster from "./images/Poster.jpg";
+import { email } from "./features/PersonalHomepage/email";
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
             I'm a passionate Frontend Developer in love with React, currently
             looking for new job opportunities.
           </LeadParagraph>
-          <Button> Hire Me</Button>
+          <Button href={`mailto:${email}`} title={email}>
+            Hire Me
+          </Button>
         </Content>
       </Hero>
       <Section>

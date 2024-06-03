@@ -82,15 +82,21 @@ export const LeadParagraph = styled.p`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
+  transition: box-shadow 0.3s;
   font-size: 20px;
   width: 154px;
   height: 49px;
-  border: 1px;
+  border: 1px solid ${({ theme }) => theme.color.iron};
   border-radius: 4px;
   padding: 12px 16px;
   color: ${({ theme }) => theme.color.white};
   background: ${({ theme }) => theme.color.scienceBlue};
+
+  &:hover {
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.color.liteViolet};
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
     font-size: 18px;
   }
