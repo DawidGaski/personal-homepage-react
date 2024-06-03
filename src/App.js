@@ -1,11 +1,3 @@
-import {
-  Article,
-  ArticleHeader,
-  ArticleHeadline,
-  ArticleHeadlineParagraph,
-  ArticleParagraph,
-  ArticleList,
-} from "./components/Article";
 import { Container } from "./components/Container";
 import { End, EndCaption, EndParagraph, EndTitle } from "./components/End";
 import {
@@ -18,6 +10,7 @@ import {
   Title,
 } from "./components/Header";
 import { Headline, Item, List, Section } from "./components/Section";
+import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import Poster from "./images/Poster.jpg";
 
 function App() {
@@ -79,36 +72,7 @@ function App() {
           <Item>JS classes</Item>
         </List>
       </Section>
-      <Article>
-        <ArticleHeader>
-          <ArticleHeadline>Portfolio</ArticleHeadline>
-          <ArticleHeadlineParagraph>
-            My Recent projects
-          </ArticleHeadlineParagraph>
-        </ArticleHeader>
-        <ArticleList>
-          <ArticleParagraph>
-            I’m always open to new projects whenever I have the time. If you
-            have a website, dashboard or mobile app in mind and need some help
-            to make your ideas come to life, feel free to contact me
-          </ArticleParagraph>
-          <ArticleParagraph>
-            I’m always open to new projects whenever I have the time. If you
-            have a website, dashboard or mobile app in mind and need some help
-            to make your ideas come to life, feel free to contact me
-          </ArticleParagraph>
-          <ArticleParagraph>
-            I’m always open to new projects whenever I have the time. If you
-            have a website, dashboard or mobile app in mind and need some help
-            to make your ideas come to life, feel free to contact me
-          </ArticleParagraph>
-          <ArticleParagraph>
-            I’m always open to new projects whenever I have the time. If you
-            have a website, dashboard or mobile app in mind and need some help
-            to make your ideas come to life, feel free to contact me
-          </ArticleParagraph>
-        </ArticleList>
-      </Article>
+      <Portfolio />
       <End>
         <EndCaption>LET'S TALK</EndCaption>
         <EndTitle>dawidgaski@gmail.com</EndTitle>
