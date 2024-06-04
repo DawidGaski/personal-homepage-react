@@ -17,6 +17,7 @@ import Tools from "./images/Tools.png";
 import Rocket from "./images/Rocket.png";
 import Message from "./images/Message.png";
 import { email } from "./features/PersonalHomepage/email";
+import { SocialIcons } from "./components/End/SocialLinks";
 
 function App() {
   return (
@@ -95,6 +96,7 @@ function App() {
           a website, dashboard or mobile app in mind and need some help to make
           your ideas come to life, feel free to contact me
         </EndParagraph>
+        <SocialIcons />
       </End>
     </Container>
   );
