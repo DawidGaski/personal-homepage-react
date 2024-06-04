@@ -9,6 +9,8 @@ import {
   ArticleHeadlineParagraph,
 } from "../../../components/Article";
 import { Content } from "./Content";
+import GitLogo from "../../../images/GitLogo.png";
+import { Icon } from "../../../components/Icon";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
@@ -20,6 +22,7 @@ export const Portfolio = () => {
   return (
     <Article>
       <ArticleHeader>
+        <Icon src={GitLogo} alt="" />
         <ArticleHeadline>Portfolio</ArticleHeadline>
         <ArticleHeadlineParagraph>My recent Projects</ArticleHeadlineParagraph>
       </ArticleHeader>
