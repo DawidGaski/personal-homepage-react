@@ -1,6 +1,7 @@
 export const theme = {
   color: {
     white: "#FFFFFF",
+    whiteLilac: "#FBFBFE",
     liteIron: "#D1D5DA4D",
     iron: "#D1D5DA",
     slateGrey: "#6E7E91",

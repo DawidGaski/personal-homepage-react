@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: ${({ theme }) => theme.color.liteIron};
+  background: ${({ theme }) => theme.color.whiteLilac};
   font-family: "Inter", sans-serif;
 }
 `;
