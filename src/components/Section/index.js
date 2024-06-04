@@ -7,6 +7,8 @@ export const Section = styled.section`
   border-radius: 4px;
   margin-left: 14px;
   margin-right: 14px;
+  box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.liteViolet},
+    0px -2px 50px 0px ${({ theme }) => theme.color.veryLiteViolet};
 `;
 
 export const Headline = styled.h2`
@@ -52,14 +54,5 @@ export const Item = styled.li`
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     font-size: 14px;
-  }
-`;
-
-export const Icon = styled.img`
-  vertical-align: middle;
-  margin-left: 5px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    height: 16px;
   }
 `;
