@@ -9,10 +9,13 @@ import {
   LeadParagraph,
   Title,
 } from "./components/Header";
-import { Headline, Icon, Item, List, Section } from "./components/Section";
+import { Headline, Item, List, Section } from "./components/Section";
+import { Icon } from "./components/Icon";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import Poster from "./images/Poster.jpg";
 import Tools from "./images/Tools.png";
+import Rocket from "./images/Rocket.png";
+import Message from "./images/Message.png";
 import { email } from "./features/PersonalHomepage/email";
 
 function App() {
@@ -29,6 +32,7 @@ function App() {
             looking for new job opportunities.
           </LeadParagraph>
           <Button href={`mailto:${email}`} title={email}>
+            <Icon src={Message} alt="" />
             Hire Me
           </Button>
         </Content>
@@ -68,7 +72,9 @@ function App() {
         </List>
       </Section>
       <Section>
-        <Headline>What I want to learn next</Headline>
+        <Headline>
+          What I want to learn next <Icon src={Rocket} alt="" />{" "}
+        </Headline>
         <List>
           <Item>React Context</Item>
           <Item>Node.js</Item>
@@ -81,7 +87,9 @@ function App() {
       <Portfolio />
       <End>
         <EndCaption>LET'S TALK</EndCaption>
-        <EndTitle>dawidgaski@gmail.com</EndTitle>
+        <EndTitle href={`mailto:${email}`} title={email}>
+          dawidgaski@gmail.com
+        </EndTitle>
         <EndParagraph>
           I’m always open to new projects whenever I have the time. If you have
           a website, dashboard or mobile app in mind and need some help to make
