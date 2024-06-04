@@ -83,6 +83,7 @@ export const LeadParagraph = styled.p`
 `;
 
 export const Button = styled.a`
+  text-decoration: none;
   transition: box-shadow 0.3s;
   font-size: 20px;
   width: 154px;
@@ -92,6 +93,9 @@ export const Button = styled.a`
   padding: 12px 16px;
   color: ${({ theme }) => theme.color.white};
   background: ${({ theme }) => theme.color.scienceBlue};
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
 
   &:hover {
     box-shadow: 0 0 0 2px ${({ theme }) => theme.color.liteViolet};
