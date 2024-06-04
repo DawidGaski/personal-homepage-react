@@ -54,3 +54,12 @@ export const Item = styled.li`
     font-size: 14px;
   }
 `;
+
+export const Icon = styled.img`
+  vertical-align: middle;
+  margin-left: 5px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    height: 16px;
+  }
+`;

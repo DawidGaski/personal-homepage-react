@@ -9,9 +9,10 @@ import {
   LeadParagraph,
   Title,
 } from "./components/Header";
-import { Headline, Item, List, Section } from "./components/Section";
+import { Headline, Icon, Item, List, Section } from "./components/Section";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import Poster from "./images/Poster.jpg";
+import Tools from "./images/Tools.png";
 import { email } from "./features/PersonalHomepage/email";
 
 function App() {
@@ -33,7 +34,9 @@ function App() {
         </Content>
       </Hero>
       <Section>
-        <Headline>My skillset includes</Headline>
+        <Headline>
+          My skillset includes <Icon src={Tools} alt="" />
+        </Headline>
         <List>
           <Item>HTML</Item>
           <Item>Teamwork</Item>
