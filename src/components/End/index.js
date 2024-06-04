@@ -19,10 +19,15 @@ export const EndCaption = styled.header`
   color: ${({ theme }) => theme.color.slateGrey};
 `;
 
-export const EndTitle = styled.h1`
+export const EndTitle = styled.a`
+  text-decoration: none;
   font-size: 32px;
   font-weight: 900;
   color: ${({ theme }) => theme.color.mineShaft};
+
+  &:hover {
+    color: ${({ theme }) => theme.color.scienceBlue};
+  }
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
     font-size: 24px;
   }
