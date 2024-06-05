@@ -10,12 +10,15 @@ import {
   Title,
 } from "./components/Header";
 import { Headline, Item, List, Section } from "./components/Section";
-import { Icon } from "./components/Icon";
+import { Icon, TextIcon } from "./components/Icon";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import Poster from "./images/Poster.jpg";
 import Tools from "./images/Tools.png";
 import Rocket from "./images/Rocket.png";
 import Message from "./images/Message.png";
+import Hand from "./images/Hand.png";
+import Human from "./images/Human.png";
+import Laptop from "./images/Laptop.png";
 import { email } from "./features/PersonalHomepage/email";
 import { SocialIcons } from "./components/End/SocialLinks";
 
@@ -29,7 +32,8 @@ function App() {
           <Title>Dawid Gałęski</Title>
           <LeadParagraph>
             {" "}
-            I'm a passionate Frontend Developer in love with React, currently
+            <TextIcon src={Human} alt="" /> <TextIcon src={Laptop} alt="" />
+            I’m a passionate Frontend Developer in love with React, currently
             looking for new job opportunities.
           </LeadParagraph>
           <Button href={`mailto:${email}`} title={email}>
@@ -94,7 +98,8 @@ function App() {
         <EndParagraph>
           I’m always open to new projects whenever I have the time. If you have
           a website, dashboard or mobile app in mind and need some help to make
-          your ideas come to life, feel free to contact me
+          your ideas come to life, feel free to contact me.{" "}
+          <Icon src={Hand} alt="" />
         </EndParagraph>
         <SocialIcons />
       </End>
