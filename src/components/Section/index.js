@@ -14,9 +14,11 @@ export const Section = styled.section`
 export const Headline = styled.h2`
   font-size: 30px;
   font-weight: 900;
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 16px;
+  padding-bottom: 17px;
   color: ${({ theme }) => theme.color.mineShaft};
+  border-bottom: solid 1px ${({ theme }) => theme.color.liteIron};
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
     font-size: 24px;
   }
