@@ -16,6 +16,7 @@ export const End = styled.section`
 export const EndCaption = styled.header`
   font-size: 12px;
   font-weight: 700;
+  padding-bottom: 24px;
   color: ${({ theme }) => theme.color.slateGrey};
 `;
 
