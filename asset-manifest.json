@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.87a74aec.js",
+    "main.js": "/personal-homepage-react/static/js/main.98a85649.js",
     "static/js/453.1a05e6b0.chunk.js": "/personal-homepage-react/static/js/453.1a05e6b0.chunk.js",
     "static/media/Poster.jpg": "/personal-homepage-react/static/media/Poster.1f89a85cf96189070d5b.jpg",
     "static/media/GithubIcon.svg": "/personal-homepage-react/static/media/GithubIcon.09abe07d9aebd72f04b4118999889c9a.svg",
@@ -8,10 +8,10 @@
     "static/media/Danger.svg": "/personal-homepage-react/static/media/Danger.565b2ffcaed33cfb47d7c7f4c6a42843.svg",
     "static/media/FacebookIcon.svg": "/personal-homepage-react/static/media/FacebookIcon.14f43e9c25d473ecd49ceaf878f965b9.svg",
     "static/media/iconSpinner.svg": "/personal-homepage-react/static/media/iconSpinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
-    "main.87a74aec.js.map": "/personal-homepage-react/static/js/main.87a74aec.js.map",
+    "main.98a85649.js.map": "/personal-homepage-react/static/js/main.98a85649.js.map",
     "453.1a05e6b0.chunk.js.map": "/personal-homepage-react/static/js/453.1a05e6b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.87a74aec.js"
+    "static/js/main.98a85649.js"
   ]
 }
