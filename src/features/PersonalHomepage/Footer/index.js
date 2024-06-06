@@ -1,10 +1,15 @@
-import { End, EndCaption, EndTitle, EndParagraph } from "./styled";
-import { Icon } from "../Icon/styled";
-import { SocialIcons } from "./SocialLinks";
-import { email } from "./../../features/PersonalHomepage/email";
-import Hand from "./../../images/Hand.png";
+import {
+  End,
+  EndCaption,
+  EndTitle,
+  EndParagraph,
+} from "../../../components/End/styled";
+import { email } from "../email";
+import { Icon } from "../../../components/Icon/styled";
+import { SocialIcons } from "./SocialLinks/index";
+import Hand from "./../../../images/Hand.png";
 
-export const EndSection = () => (
+export const Footer = () => (
   <End>
     <EndCaption>LET'S TALK</EndCaption>
     <EndTitle href={`mailto:${email}`} title={email}>

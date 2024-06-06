@@ -1,9 +1,9 @@
 import { Container } from "./components/Container";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
-import { EndSection } from "./components/End";
 import { MySkills } from "./features/PersonalHomepage/MySkills";
 import { SkillsToLearn } from "./features/PersonalHomepage/SkillsToLearn";
 import { Myself } from "./features/PersonalHomepage/Myself";
+import { Footer } from "./features/PersonalHomepage/Footer";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <MySkills />
       <SkillsToLearn />
       <Portfolio />
-      <EndSection />
+      <Footer />
     </Container>
   );
 }
