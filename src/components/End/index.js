@@ -1,50 +1,20 @@
-import styled from "styled-components";
+import { End, EndCaption, EndTitle, EndParagraph } from "./styled";
+import { Icon } from "../Icon";
+import { SocialIcons } from "./SocialLinks";
+import { email } from "./../../features/PersonalHomepage/email";
+import Hand from "./../../images/Hand.png";
 
-export const End = styled.section`
-  max-width: 691px;
-  max-height: 281px;
-  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-`;
-
-export const EndCaption = styled.header`
-  font-size: 12px;
-  font-weight: 700;
-  padding-bottom: 24px;
-  color: ${({ theme }) => theme.color.slateGrey};
-`;
-
-export const EndTitle = styled.a`
-  text-decoration: none;
-  font-size: 32px;
-  font-weight: 900;
-  color: ${({ theme }) => theme.color.mineShaft};
-
-  &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
-    font-size: 24px;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    font-size: 18px;
-  }
-`;
-
-export const EndParagraph = styled.p`
-  font-size: 18px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.color.mineShaft};
-  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
-    font-size: 16px;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    font-size: 14px;
-  }
-`;
+export const EndSection = () => (
+  <End>
+    <EndCaption>LET'S TALK</EndCaption>
+    <EndTitle href={`mailto:${email}`} title={email}>
+      dawidgaski@gmail.com
+    </EndTitle>
+    <EndParagraph>
+      I’m always open to new projects whenever I have the time. If you have a
+      website, dashboard or mobile app in mind and need some help to make your
+      ideas come to life, feel free to contact me. <Icon src={Hand} alt="" />
+    </EndParagraph>
+    <SocialIcons />
+  </End>
+);
