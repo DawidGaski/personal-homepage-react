@@ -8,7 +8,7 @@ import {
   LeadParagraph,
   Title,
 } from "./components/Header";
-import { Icon, TextIcon } from "./components/Icon";
+import { Icon, TextIcon } from "./components/Icon/styled";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import { EndSection } from "./components/End";
 import Poster from "./images/Poster.jpg";

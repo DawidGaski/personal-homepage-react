@@ -4,7 +4,7 @@ import {
   List,
   Item,
 } from "../../../components/Section/styled";
-import { Icon } from "../../../components/Icon";
+import { Icon } from "../../../components/Icon/styled";
 import Tools from "../../../images/Tools.png";
 
 export const MySkills = () => (

@@ -4,7 +4,7 @@ import {
   List,
   Item,
 } from "../../../components/Section/styled";
-import { Icon } from "../../../components/Icon";
+import { Icon } from "../../../components/Icon/styled";
 import Rocket from "../../../images/Rocket.png";
 
 export const SkillsToLearn = () => (

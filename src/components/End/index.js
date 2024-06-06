@@ -1,5 +1,5 @@
 import { End, EndCaption, EndTitle, EndParagraph } from "./styled";
-import { Icon } from "../Icon";
+import { Icon } from "../Icon/styled";
 import { SocialIcons } from "./SocialLinks";
 import { email } from "./../../features/PersonalHomepage/email";
 import Hand from "./../../images/Hand.png";

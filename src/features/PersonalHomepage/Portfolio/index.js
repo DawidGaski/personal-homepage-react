@@ -7,10 +7,10 @@ import {
   ArticleHeader,
   ArticleHeadline,
   ArticleHeadlineParagraph,
-} from "../../../components/Article";
+} from "../../../components/Article/styled";
 import { Content } from "./Content";
 import GitLogo from "../../../images/GitLogo.png";
-import { Icon } from "../../../components/Icon";
+import { Icon } from "../../../components/Icon/styled";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
