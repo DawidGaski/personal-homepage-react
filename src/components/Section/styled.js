@@ -9,6 +9,10 @@ export const Section = styled.section`
   margin-right: 14px;
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.liteViolet},
     0px -2px 50px 0px ${({ theme }) => theme.color.veryLiteViolet};
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+    padding: 16px;
+  }
 `;
 
 export const Headline = styled.h2`
