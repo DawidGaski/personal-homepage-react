@@ -8,17 +8,16 @@ import {
   LeadParagraph,
   Title,
 } from "./components/Header";
-import { Headline, Item, List, Section } from "./components/Section/styled";
 import { Icon, TextIcon } from "./components/Icon";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import { EndSection } from "./components/End";
 import Poster from "./images/Poster.jpg";
-import Rocket from "./images/Rocket.png";
 import Message from "./images/Message.png";
 import Human from "./images/Human.png";
 import Laptop from "./images/Laptop.png";
 import { email } from "./features/PersonalHomepage/email";
 import { MySkills } from "./features/PersonalHomepage/MySkills";
+import { SkillsToLearn } from "./features/PersonalHomepage/SkillsToLearn";
 
 function App() {
   return (
@@ -41,19 +40,7 @@ function App() {
         </Content>
       </Hero>
       <MySkills />
-      <Section>
-        <Headline>
-          What I want to learn next <Icon src={Rocket} alt="" />{" "}
-        </Headline>
-        <List>
-          <Item>React Context</Item>
-          <Item>Node.js</Item>
-          <Item>Cypress</Item>
-          <Item>Unit testing</Item>
-          <Item>TypeScript</Item>
-          <Item>JS classes</Item>
-        </List>
-      </Section>
+      <SkillsToLearn />
       <Portfolio />
       <EndSection />
     </Container>
