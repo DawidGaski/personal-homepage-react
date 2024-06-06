@@ -25,7 +25,7 @@ export const Tile = styled.li`
   border-radius: 4px;
 
   &:hover {
-    border-color: ${({ theme }) => theme.color.scienceBlue};
+    border-color: ${({ theme }) => theme.color.liteScienceBlue};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {

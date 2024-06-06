@@ -27,7 +27,7 @@ export const EndTitle = styled.a`
   color: ${({ theme }) => theme.color.mineShaft};
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.color.dodgerBlue};
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
     font-size: 24px;
