@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Article = styled.article`
   width: auto;
   height: auto;
-  margin: 16px;
+  margin-left: 14px;
+  margin-right: 14px;
 `;
 
 export const ArticleHeader = styled.header`
