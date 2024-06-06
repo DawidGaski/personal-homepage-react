@@ -6,6 +6,7 @@ import {
 } from "../../../components/Section/styled";
 import { Icon } from "../../../components/Icon/styled";
 import Rocket from "../../../images/Rocket.png";
+import { ReactComponent as Ellipse } from "../../../images/Ellipse 36.svg";
 
 export const SkillsToLearn = () => (
   <Section>
@@ -13,12 +14,35 @@ export const SkillsToLearn = () => (
       What I want to learn next <Icon src={Rocket} alt="" />{" "}
     </Headline>
     <List>
-      <Item>React Context</Item>
-      <Item>Node.js</Item>
-      <Item>Cypress</Item>
-      <Item>Unit testing</Item>
-      <Item>TypeScript</Item>
-      <Item>JS classes</Item>
+      <Item>
+        {" "}
+        <Ellipse /> React Context
+      </Item>
+      <Item>
+        {" "}
+        <Ellipse />
+        Node.js
+      </Item>
+      <Item>
+        {" "}
+        <Ellipse />
+        Cypress
+      </Item>
+      <Item>
+        {" "}
+        <Ellipse />
+        Unit testing
+      </Item>
+      <Item>
+        {" "}
+        <Ellipse />
+        TypeScript
+      </Item>
+      <Item>
+        {" "}
+        <Ellipse />
+        JS classes
+      </Item>
     </List>
   </Section>
 );

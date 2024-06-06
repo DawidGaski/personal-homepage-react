@@ -1,4 +1,4 @@
-import { Container } from "./components/Container";
+import { Container } from "./components/Container/styled";
 import { Portfolio } from "./features/PersonalHomepage/Portfolio";
 import { MySkills } from "./features/PersonalHomepage/MySkills";
 import { SkillsToLearn } from "./features/PersonalHomepage/SkillsToLearn";

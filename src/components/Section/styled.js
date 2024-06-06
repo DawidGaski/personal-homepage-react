@@ -28,7 +28,8 @@ export const Headline = styled.h2`
 `;
 
 export const List = styled.ul`
-  margin-left: 32px;
+  list-style: none;
+  margin-left: 16px;
   margin-right: 32px;
   padding-inline-start: 0px;
   display: grid;
@@ -48,9 +49,11 @@ export const List = styled.ul`
 export const Item = styled.li`
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 5%;
   padding: 4px;
   color: ${({ theme }) => theme.color.slateGrey};
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 16px;
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
     font-size: 16px;
   }
