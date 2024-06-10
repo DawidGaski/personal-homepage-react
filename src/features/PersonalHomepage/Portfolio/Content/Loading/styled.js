@@ -12,11 +12,11 @@ export const Wrapper = styled.div`
   flex-direction: column;
   margin-top: 88px;
   font-size: 20px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textPrimary};
   display: flex;
   justify-content: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 17px;
     margin-top: 32px;
   }
@@ -25,10 +25,10 @@ export const Wrapper = styled.div`
 export const StyledIconSpinner = styled(iconSpinner)`
   margin-top: 48px;
   animation: ${rotate} 1s linear infinite;
-  color: ${({ theme }) => theme.color.liteIron};
+  color: ${({ theme }) => theme.colors.primary};
   height: auto;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     margin-top: 32px;
     width: 60px;
   }

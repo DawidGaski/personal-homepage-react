@@ -6,9 +6,9 @@ export const Wrapper = styled.article`
   justify-items: center;
   grid-gap: 32px;
   text-align: center;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textPrimary};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     grid-gap: 24px;
   }
 `;
@@ -17,7 +17,7 @@ export const Header = styled.header`
   font-weight: 700px;
   font-size: 24px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 17px;
   }
 `;
@@ -27,7 +27,7 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 1.4;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     font-size: 16px;
   }
 `;
