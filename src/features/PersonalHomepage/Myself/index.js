@@ -11,7 +11,7 @@ import { Icon, TextIcon } from "../../../components/Icon/styled";
 import { email } from "../email";
 import Human from "../../../images/Human.png";
 import Message from "../../../images/Message.png";
-import Laptop from "../../../images/Laptop.png";
+import Laptop from "../../../images/Notebook.png";
 import Poster from "../../../images/Poster.jpg";
 
 export const Myself = () => (
