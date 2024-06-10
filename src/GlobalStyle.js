@@ -11,7 +11,9 @@ html {
 
 body {
   background: ${({ theme }) => theme.color.whiteLilac};
+  color: ${({ theme }) => theme.color.mineshaft};
   font-family: "Inter", sans-serif;
-  word-break: "break-word";
+  word-break: break-word;
+  letter-spacing: 0,05em;
 }
 `;
