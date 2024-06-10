@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  background: ${({ theme }) => theme.color.whiteLilac};
-  color: ${({ theme }) => theme.color.mineshaft};
+  background: ${({ theme }) => theme.colors.site.background};
+  color: ${({ theme }) => theme.colors.site.text};
   font-family: "Inter", sans-serif;
   word-break: break-word;
   letter-spacing: 0,05em;

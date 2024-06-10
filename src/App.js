@@ -1,20 +1,21 @@
-import { Container } from "./components/Container/styled";
-import { Portfolio } from "./features/PersonalHomepage/Portfolio";
-import { MySkills } from "./features/PersonalHomepage/MySkills";
-import { SkillsToLearn } from "./features/PersonalHomepage/SkillsToLearn";
-import { Myself } from "./features/PersonalHomepage/Myself";
-import { Footer } from "./features/PersonalHomepage/Footer";
+import { useSelector } from "react-redux";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./GlobalStyle";
+import { PersonalHomepage } from "./features/PersonalHomepage";
+import { themeDark, themeLight } from "./theme";
+import { selectIsDarkTheme } from "./common/themeSlice";
+import { Normalize } from "styled-normalize";
 
-function App() {
+export const App = () => {
+  const isDarkTheme = useSelector(selectIsDarkTheme);
+
   return (
-    <Container>
-      <Myself />
-      <MySkills />
-      <SkillsToLearn />
-      <Portfolio />
-      <Footer />
-    </Container>
+    <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
+      <Normalize />
+      <GlobalStyle />
+      <PersonalHomepage />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
