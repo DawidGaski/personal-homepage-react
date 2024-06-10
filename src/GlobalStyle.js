@@ -12,5 +12,6 @@ html {
 body {
   background: ${({ theme }) => theme.color.whiteLilac};
   font-family: "Inter", sans-serif;
+  word-break: "break-word";
 }
 `;
