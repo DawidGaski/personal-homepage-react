@@ -1,6 +1,29 @@
 # Portfolio
 
-This is my Hompage - https://dawidgaski.github.io/personal-homepage-react/
+This is my Homepage.
+
+[![Homepage.png](https://i.postimg.cc/GpCp2hXF/Homepage.png)](https://postimg.cc/5XsJK1dy)
+
+## Demo
+
+https://dawidgaski.github.io/personal-homepage-react/
+
+## Technologies
+
+- API Integration
+- Axios
+- Create React App (Webpack, Babel, ESlint, PostCSS, CSS Loader & Style Loader)
+- CSS Flexbox
+- CSS Grid
+- Custom Hooks
+- Immutability with the immer library in Redux
+- JavaScript ES6+ Features
+- JSX (JavaScript XML)
+- Local Storage with Redux-Saga
+- Media Queries
+- React.js
+- Redux
+- Styled Components
 
 ## Available Scripts
 

@@ -82,7 +82,7 @@ export const MySkills = () => (
       <Item>
         {" "}
         <Ellipse />
-        Working witch API (fetch, axios)
+        Working with API (fetch, axios)
       </Item>
       <Item>
         {" "}
